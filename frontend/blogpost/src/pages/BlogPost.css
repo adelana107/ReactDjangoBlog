@@ -2,8 +2,10 @@
 .blog-post {
   background-color: white;
   border-radius: 8px;
-  padding: 20px;
-  margin: 20px 0;
+  padding: 20px;              /* Normal spacing */
+  margin: 20px auto;          /* Centers the card */
+  width: 100%;
+  max-width: 800px;           /* So it's neat */
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform 0.2s;
 }

@@ -1,0 +1,39 @@
+/* Whole page layout */
+.postpage-wrapper {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Centers the main content perfectly */
+.postpage-center {
+  flex: 1; /* pushes footer down */
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+  padding: 20px;
+}
+
+/* Post box */
+.postpage-main {
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px 120px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.postpage-title {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.postpage-content {
+  line-height: 1.7;
+  color: #555;
+  white-space: pre-line;
+}

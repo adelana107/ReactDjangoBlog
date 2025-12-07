@@ -10,4 +10,8 @@ export default defineConfig({
       },
     }),
   ],
+  server: {
+    // ensures SPA routing works on refresh
+    historyApiFallback: true,
+  },
 })
