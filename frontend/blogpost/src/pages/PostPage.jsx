@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams,Link } from "react-router-dom";
 import axios from "axios";
 import NavBar from "../components/NavBar.jsx";
 
 import Footer from "../components/Footer.jsx";
 import "./PostPage.css";
 import { FaEdit } from "react-icons/fa";
+
 
 const PostPage = () => {
   const { id } = useParams();
@@ -51,7 +52,9 @@ const PostPage = () => {
           <p className="postpage-content">{post.content}</p>
         </main>
         <div>
-          <FaEdit />
+          <Link to={`/edit-post/${id}`}>
+            <FaEdit />
+          </Link>
         </div>
       </div>
 

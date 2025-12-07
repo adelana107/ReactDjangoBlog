@@ -27,7 +27,6 @@ function App() {
 
   return (
     <div className="app-container">
-     
       <NavBar />
 
       <main className="main-content">
